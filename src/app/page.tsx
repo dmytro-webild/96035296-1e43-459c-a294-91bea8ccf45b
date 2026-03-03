@@ -18,11 +18,14 @@ import {
   CheckCircle,
   Crown,
   Globe,
+  ImageIcon,
+  Mic,
   Settings,
   Sparkles,
   Star,
   TrendingUp,
   Users,
+  Wand2,
   Zap,
 } from "lucide-react";
 
@@ -44,72 +47,71 @@ export default function LandingPage() {
         <NavbarStyleCentered
           brandName="AICore"
           navItems={[
+            { name: "Tools", id: "tools" },
             { name: "Features", id: "features" },
-            { name: "Capabilities", id: "capabilities" },
             { name: "Pricing", id: "pricing" },
             { name: "FAQ", id: "faq" },
-            { name: "Contact", id: "footer" },
           ]}
-          button={{ text: "Get Started", href: "pricing" }}
+          button={{ text: "Get Started", href: "/tools" }}
         />
       </div>
 
       <div id="hero" data-section="hero">
         <HeroBillboardDashboard
-          title="Intelligent AI Solutions for Modern Business"
-          description="Harness the power of artificial intelligence to automate workflows, gain predictive insights, and transform your business operations with cutting-edge machine learning technology."
+          title="Free AI Tools at Your Fingertips"
+          description="Generate stunning images, create natural voices, and access advanced AI capabilities—all completely free. No credit card required. Start creating today."
           tag="AI-Powered Innovation"
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           background={{ variant: "radial-gradient" }}
           buttons={[
-            { text: "Start Free Trial", href: "pricing" },
-            { text: "View Demo", href: "capabilities" },
+            { text: "Explore Tools", href: "/tools" },
+            { text: "Learn More", href: "#features" },
           ]}
           buttonAnimation="blur-reveal"
           dashboard={{
-            title: "Real-Time AI Analytics Hub",            logoIcon: Zap,
-            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/a-modern-sleek-ai-dashboard-interface-wi-1772542588693-f10752a8.png",            searchPlaceholder: "Search insights...",            sidebarItems: [
-              { icon: BarChart3, active: true },
-              { icon: Brain, active: false },
-              { icon: Settings, active: false },
+            title: "AI Tools Dashboard",            logoIcon: Zap,
+            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/a-modern-sleek-ai-dashboard-interface-wi-1772542588693-f10752a8.png",            searchPlaceholder: "Search tools...",            sidebarItems: [
+              { icon: ImageIcon, active: true },
+              { icon: Mic, active: false },
+              { icon: Wand2, active: false },
             ],
             buttons: [
-              { text: "Export Report", href: "#" },
-              { text: "Share Dashboard", href: "#" },
+              { text: "Try Now", href: "/tools" },
+              { text: "View Examples", href: "#features" },
             ],
             stats: [
               {
-                title: "Processing Speed",                values: [450, 680, 920],
-                valuePrefix: "",                valueSuffix: "ops/sec",                description: "AI inference operations per second"},
+                title: "Images Generated",                values: [10000, 50000, 150000],
+                valuePrefix: "",                valueSuffix: "+",                description: "AI-powered images created"},
               {
-                title: "Accuracy Rate",                values: [92.5, 94.8, 97.2],
-                valuePrefix: "",                valueSuffix: "%",                description: "Model prediction accuracy"},
+                title: "Voices Created",                values: [5000, 25000, 75000],
+                valuePrefix: "",                valueSuffix: "+",                description: "Natural voice generations"},
               {
-                title: "Active Models",                values: [12, 24, 42],
-                valuePrefix: "",                valueSuffix: "",                description: "Deployed AI models in production"},
+                title: "Active Users",                values: [1000, 5000, 20000],
+                valuePrefix: "",                valueSuffix: "+",                description: "Users leveraging free AI tools"},
             ],
-            chartTitle: "Model Performance",            chartData: [
+            chartTitle: "Tool Usage Growth",            chartData: [
+              { value: 65 },
               { value: 75 },
               { value: 85 },
-              { value: 92 },
-              { value: 88 },
+              { value: 90 },
               { value: 95 },
             ],
-            listTitle: "Recent Predictions",            listItems: [
-              { icon: TrendingUp, title: "Revenue Forecast: +34%", status: "High Confidence" },
-              { icon: AlertCircle, title: "Risk Detection: Critical", status: "Anomaly Detected" },
-              { icon: CheckCircle, title: "Process Optimization: Complete", status: "Deployed" },
+            listTitle: "Popular Tools",            listItems: [
+              { icon: ImageIcon, title: "Image Generation", status: "100% Free" },
+              { icon: Mic, title: "Voice Generation", status: "Zero Limits" },
+              { icon: Wand2, title: "AI Enhancement", status: "Always Free" },
             ],
           }}
         />
       </div>
 
-      <div id="features" data-section="features">
+      <div id="tools" data-section="tools">
         <FeatureCardSeven
-          title="Powerful AI Capabilities"
-          description="Explore our comprehensive suite of AI-powered tools designed to streamline your business processes and unlock actionable insights."
-          tag="Core Features"
+          title="Powerful Free AI Tools"
+          description="A comprehensive suite of AI-powered utilities designed to enhance your creativity and productivity. All tools are completely free with no hidden charges."
+          tag="Core Tools"
           tagIcon={Zap}
           tagAnimation="slide-up"
           textboxLayout="default"
@@ -118,29 +120,29 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              title: "Neural Network Processing",              description: "Advanced deep learning algorithms that continuously improve with each interaction, providing increasingly accurate predictions and insights over time.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/abstract-visualization-of-artificial-neu-1772542587328-cfcff9b6.png"},
+              title: "Image Generation",              description: "Create stunning, high-quality images from text descriptions. Powered by advanced neural networks, generate unlimited images with complete creative freedom.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/abstract-visualization-of-artificial-neu-1772542587328-cfcff9b6.png"},
             {
               id: 2,
-              title: "Real-Time Data Analysis",              description: "Process and analyze massive datasets in real-time, transforming raw data into actionable business intelligence instantly.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/a-professional-workspace-showing-ai-powe-1772542587629-ff99eba2.png"},
+              title: "Voice Generation",              description: "Transform text into natural-sounding speech in multiple languages. Create voiceovers, narrations, and audio content with realistic AI voices—completely free.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/a-professional-workspace-showing-ai-powe-1772542587629-ff99eba2.png"},
             {
               id: 3,
-              title: "Intelligent Automation",              description: "Automate repetitive tasks and complex workflows with AI-driven automation that learns from patterns and optimizes processes continuously.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/visual-representation-of-ai-powered-auto-1772542587098-5506675c.png"},
+              title: "Advanced AI Utilities",              description: "Access a collection of specialized AI tools including text analysis, content generation, code assistance, and creative writing—all integrated in one platform.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/visual-representation-of-ai-powered-auto-1772542587098-5506675c.png"},
             {
               id: 4,
-              title: "Predictive Analytics",              description: "Forecast trends, anticipate market changes, and make data-driven decisions with our advanced predictive modeling capabilities.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/futuristic-visualization-of-predictive-a-1772542587310-0a73569d.png"},
+              title: "Unlimited Creativity",              description: "No limits, no restrictions. Generate as many images and voices as you want. Create, iterate, and refine your projects without worrying about quotas or charges.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/futuristic-visualization-of-predictive-a-1772542587310-0a73569d.png"},
           ]}
         />
       </div>
 
-      <div id="capabilities" data-section="capabilities">
+      <div id="features" data-section="features">
         <TestimonialAboutCard
-          tag="AI Excellence"
+          tag="Why Choose AICore"
           tagIcon={BrainIcon}
           tagAnimation="slide-up"
-          title="Enterprise-Grade AI Technology Built for Scale"
-          description="Trusted by Fortune 500 Companies"
-          subdescription="Delivering measurable results across industries"
-          icon={Zap}
+          title="Professional-Grade AI Accessible to Everyone"
+          description="Completely Free and Always Will Be"
+          subdescription="Delivering powerful AI capabilities without barriers"
+          icon={Sparkles}
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/illustration-of-an-ai-chatbot-interface--1772542586957-26dc1352.png"
           mediaAnimation="blur-reveal"
           useInvertedBackground={true}
@@ -149,8 +151,8 @@ export default function LandingPage() {
 
       <div id="metrics" data-section="metrics">
         <MetricCardThree
-          title="Industry-Leading Performance"
-          description="Our AI platform delivers measurable results that drive real business value."
+          title="Industry-Leading Capabilities"
+          description="Our free AI tools deliver professional-grade results with ease and reliability."
           tag="Performance"
           tagIcon={TrendingUp}
           tagAnimation="slide-up"
@@ -158,18 +160,18 @@ export default function LandingPage() {
           animationType="scale-rotate"
           useInvertedBackground={false}
           metrics={[
-            { id: "1", icon: Zap, title: "Speed Improvement", value: "10x" },
-            { id: "2", icon: TrendingUp, title: "Accuracy Gain", value: "97%" },
+            { id: "1", icon: Zap, title: "Lightning Fast", value: "<2s" },
+            { id: "2", icon: Star, title: "High Quality", value: "99%" },
             { id: "3", icon: Users, title: "Active Users", value: "50K+" },
-            { id: "4", icon: Globe, title: "Global Reach", value: "120+" },
+            { id: "4", icon: Globe, title: "Global Reach", value: "180+" },
           ]}
         />
       </div>
 
       <div id="testimonials" data-section="testimonials">
         <TestimonialCardTwo
-          title="Customer Success Stories"
-          description="See how leading companies are transforming their operations with our AI solutions."
+          title="What Users Love"
+          description="Discover how creatives and professionals are transforming their work with our free AI tools."
           tag="Testimonials"
           tagIcon={Star}
           tagAnimation="slide-up"
@@ -178,26 +180,26 @@ export default function LandingPage() {
           useInvertedBackground={true}
           testimonials={[
             {
-              id: "1",              name: "Sarah Chen",              role: "Chief Technology Officer",              testimonial: "This AI platform transformed our data processing workflows. We've achieved 10x faster insights with unprecedented accuracy. The results have been phenomenal for our entire organization.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/professional-portrait-photograph-of-a-bu-1772542586545-0885d63a.png"},
+              id: "1",              name: "Alex Rivera",              role: "Graphic Designer",              testimonial: "Finally, professional-grade image generation that's actually free. No hidden fees, no limits. I've replaced three paid tools with this platform.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/professional-portrait-photograph-of-a-bu-1772542586545-0885d63a.png"},
             {
-              id: "2",              name: "Marcus Johnson",              role: "VP of Operations",              testimonial: "Implementing this solution reduced our operational costs by 40% in the first quarter. The automation capabilities freed up our team to focus on strategic initiatives.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/professional-portrait-photograph-of-a-te-1772542586736-b68ca490.png"},
+              id: "2",              name: "Jordan Lee",              role: "Content Creator",              testimonial: "The voice generation tool is incredible. Natural sounding, multiple languages, and I can create unlimited voiceovers for my videos without breaking the bank.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/professional-portrait-photograph-of-a-te-1772542586736-b68ca490.png"},
             {
-              id: "3",              name: "Elena Rodriguez",              role: "Head of Data Science",              testimonial: "The platform's predictive analytics have become essential to our decision-making process. Accuracy improved dramatically, and the learning curve was minimal.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/professional-portrait-photograph-of-a-bu-1772542587072-e7fa89df.png"},
+              id: "3",              name: "Sam Chen",              role: "Developer",              testimonial: "Amazing suite of AI tools. The code assistance and text analysis features have saved me countless hours. Best part? It's completely free.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/professional-portrait-photograph-of-a-bu-1772542587072-e7fa89df.png"},
             {
-              id: "4",              name: "David Kim",              role: "Enterprise Solutions Director",              testimonial: "Supporting thousands of concurrent users without a hiccup. The scalability and reliability are exactly what an enterprise solution should be.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/professional-portrait-photograph-of-a-te-1772542586942-5933d843.png"},
+              id: "4",              name: "Morgan James",              role: "Marketing Manager",              testimonial: "Our entire team uses AICore. The image and voice tools have transformed how we create marketing materials. No more budget constraints.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/professional-portrait-photograph-of-a-te-1772542586942-5933d843.png"},
             {
-              id: "5",              name: "Jennifer Wells",              role: "Product Manager",              testimonial: "The integration process was seamless. Our team had the AI models deployed in production within two weeks. Customer satisfaction scores increased significantly.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/professional-portrait-photograph-of-a-bu-1772542587421-e2283c5c.png"},
+              id: "5",              name: "Casey Park",              role: "Entrepreneur",              testimonial: "Building my startup with limited budget was tough until I found AICore. These tools have been invaluable for prototyping and MVP development.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/professional-portrait-photograph-of-a-bu-1772542587421-e2283c5c.png"},
             {
-              id: "6",              name: "Thomas Anderson",              role: "Director of AI Research",              testimonial: "This platform represents the future of enterprise AI. The flexibility and power combined with ease of use make it the best solution on the market.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/professional-portrait-photograph-of-an-e-1772542587045-57684197.png"},
+              id: "6",              name: "Riley Singh",              role: "Digital Artist",              testimonial: "The quality is exceptional. I can experiment endlessly without worrying about costs. This platform truly democratizes AI technology.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/professional-portrait-photograph-of-an-e-1772542587045-57684197.png"},
           ]}
         />
       </div>
 
       <div id="pricing" data-section="pricing">
         <PricingCardOne
-          title="Choose Your AI Plan"
-          description="Start free and scale as your business grows. All plans include core AI capabilities with enterprise support."
-          tag="Flexible Pricing"
+          title="Simple, Transparent Pricing"
+          description="All features are completely free. We believe AI should be accessible to everyone. No credit card required, no limits on usage."
+          tag="100% Free"
           tagIcon={Sparkles}
           tagAnimation="slide-up"
           textboxLayout="default"
@@ -205,19 +207,19 @@ export default function LandingPage() {
           useInvertedBackground={false}
           plans={[
             {
-              id: "starter",              badge: "For Startups",              badgeIcon: Zap,
-              price: "$99/mo",              subtitle: "Perfect for teams just starting with AI",              features: [
-                "Up to 100K AI predictions/month",                "3 custom AI models",                "Real-time data processing",                "Email support",                "Basic analytics dashboard"],
+              id: "free",              badge: "Always Free",              badgeIcon: Zap,
+              price: "$0/mo",              subtitle: "All features included, forever",              features: [
+                "Unlimited image generation",                "Unlimited voice generation",                "All AI utilities",                "No credit card required",                "No usage limits",                "Community support"],
             },
             {
-              id: "professional",              badge: "Most Popular",              badgeIcon: Star,
-              price: "$499/mo",              subtitle: "Ideal for growing businesses",              features: [
-                "Up to 1M AI predictions/month",                "15 custom AI models",                "Advanced automation",                "Priority support",                "Advanced analytics & reporting",                "API access"],
+              id: "professional",              badge: "Coming Soon",              badgeIcon: Star,
+              price: "TBD",              subtitle: "Enhanced features and priority support",              features: [
+                "All free features",                "Priority processing",                "Advanced customization",                "Dedicated support",                "API access",                "White-label options"],
             },
             {
-              id: "enterprise",              badge: "For Enterprise",              badgeIcon: Crown,
-              price: "Custom",              subtitle: "Unlimited scale and capabilities",              features: [
-                "Unlimited AI predictions",                "Unlimited custom models",                "Dedicated infrastructure",                "24/7 dedicated support",                "Custom integrations",                "On-premise deployment available"],
+              id: "enterprise",              badge: "Enterprise",              badgeIcon: Crown,
+              price: "Custom",              subtitle: "For organizations with custom needs",              features: [
+                "All features included",                "Dedicated infrastructure",                "24/7 support",                "Custom integrations",                "On-premise deployment",                "SLA guarantee"],
             },
           ]}
         />
@@ -226,24 +228,24 @@ export default function LandingPage() {
       <div id="faq" data-section="faq">
         <FaqSplitText
           sideTitle="Frequently Asked Questions"
-          sideDescription="Everything you need to know about our AI platform and how to get started."
+          sideDescription="Everything you need to know about AICore and our free AI tools."
           textPosition="left"
           useInvertedBackground={true}
           animationType="smooth"
           faqsAnimation="blur-reveal"
           faqs={[
             {
-              id: "1",              title: "How does the AI model training work?",              content: "Our platform uses state-of-the-art deep learning algorithms that automatically train on your data. The system learns patterns and improves continuously with new information, requiring no manual model tuning from your side."},
+              id: "1",              title: "Is AICore really completely free?",              content: "Yes, absolutely! All our tools—image generation, voice generation, and AI utilities—are completely free with no hidden fees. We believe AI should be accessible to everyone. No credit card is required to get started."},
             {
-              id: "2",              title: "What data formats are supported?",              content: "We support CSV, JSON, Parquet, SQL databases, and real-time data streams. Our data ingestion pipeline is flexible and can handle structured and semi-structured data at scale."},
+              id: "2",              title: "Are there any limits on usage?",              content: "No limits whatsoever. Generate as many images and voices as you want. Create unlimited projects and explore all AI utilities without any restrictions. Our free tier includes everything."},
             {
-              id: "3",              title: "Is my data secure and private?",              content: "Yes. We implement bank-level encryption, SOC 2 Type II compliance, and offer on-premise deployment options. Your data never leaves your infrastructure if you choose the private deployment option."},
+              id: "3",              title: "Can I use the generated content commercially?",              content: "Yes! All content generated using AICore tools is yours to use freely. You can use generated images, voices, and text for personal and commercial projects without any additional licensing fees."},
             {
-              id: "4",              title: "How long does implementation take?",              content: "Most customers are up and running within 2-4 weeks. Our implementation team guides you through data preparation, model configuration, and deployment. We provide comprehensive documentation and training."},
+              id: "4",              title: "What AI models do you use?",              content: "We leverage state-of-the-art AI models for image generation, natural language processing, and voice synthesis. Our tools are constantly updated with the latest advancements in AI technology."},
             {
-              id: "5",              title: "Can I integrate with my existing tools?",              content: "Absolutely. We provide REST APIs, webhooks, and pre-built connectors for popular business tools. Our API documentation is comprehensive, and our support team can assist with custom integrations."},
+              id: "5",              title: "How long does it take to generate content?",              content: "Most generations complete in seconds. Image generation typically takes 1-5 seconds, voice generation 2-10 seconds depending on length, and text processing is nearly instantaneous."},
             {
-              id: "6",              title: "What kind of support is included?",              content: "All plans include email support. Professional plans get priority support, and Enterprise customers receive 24/7 dedicated support with a designated account manager."},
+              id: "6",              title: "Do you store my generated content?",              content: "Your generated content belongs to you. We store your projects securely and only retain data necessary to provide our service. You can delete any content anytime from your account dashboard."},
           ]}
         />
       </div>
@@ -252,11 +254,19 @@ export default function LandingPage() {
         <FooterBaseReveal
           columns={[
             {
-              title: "Product",              items: [
-                { label: "Features", href: "#features" },
-                { label: "Pricing", href: "#pricing" },
-                { label: "API Documentation", href: "#" },
-                { label: "Status", href: "#" },
+              title: "Tools",              items: [
+                { label: "Image Generation", href: "/tools" },
+                { label: "Voice Generation", href: "/tools" },
+                { label: "AI Utilities", href: "/tools" },
+                { label: "Explore All", href: "/tools" },
+              ],
+            },
+            {
+              title: "Resources",              items: [
+                { label: "Documentation", href: "#" },
+                { label: "API", href: "#" },
+                { label: "Examples", href: "#" },
+                { label: "Tutorial", href: "#" },
               ],
             },
             {
@@ -264,7 +274,7 @@ export default function LandingPage() {
                 { label: "About Us", href: "#" },
                 { label: "Blog", href: "#" },
                 { label: "Careers", href: "#" },
-                { label: "Contact", href: "#footer" },
+                { label: "Contact", href: "#" },
               ],
             },
             {
