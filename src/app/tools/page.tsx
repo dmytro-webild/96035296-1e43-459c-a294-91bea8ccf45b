@@ -61,7 +61,7 @@ export default function ToolsPage() {
           buttonAnimation="blur-reveal"
           dashboard={{
             title: "Available AI Tools",            logoIcon: Zap,
-            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/a-modern-sleek-ai-dashboard-interface-wi-1772542588693-f10752a8.png",            searchPlaceholder: "Search tools...",            sidebarItems: [
+            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/a-modern-sleek-ai-dashboard-interface-wi-1772542588693-f10752a8.png?_wi=2",            searchPlaceholder: "Search tools...",            sidebarItems: [
               { icon: ImageIcon, active: true },
               { icon: Mic, active: false },
               { icon: Wand2, active: false },
@@ -110,16 +110,16 @@ export default function ToolsPage() {
           features={[
             {
               id: 1,
-              title: "Image Generation",              description: "Create stunning images from text descriptions. Use your imagination and let AI bring your vision to life with unlimited generation capability.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/abstract-visualization-of-artificial-neu-1772542587328-cfcff9b6.png"},
+              title: "Image Generation",              description: "Create stunning images from text descriptions. Use your imagination and let AI bring your vision to life with unlimited generation capability.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/abstract-visualization-of-artificial-neu-1772542587328-cfcff9b6.png?_wi=2"},
             {
               id: 2,
-              title: "Voice Generation",              description: "Transform text into natural-sounding speech. Create voiceovers, narrations, and podcasts in multiple languages and voices—no mic required.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/a-professional-workspace-showing-ai-powe-1772542587629-ff99eba2.png"},
+              title: "Voice Generation",              description: "Transform text into natural-sounding speech. Create voiceovers, narrations, and podcasts in multiple languages and voices—no mic required.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/a-professional-workspace-showing-ai-powe-1772542587629-ff99eba2.png?_wi=2"},
             {
               id: 3,
-              title: "Text Analysis",              description: "Analyze, summarize, and enhance your text. Extract key insights, check grammar, and improve clarity with advanced NLP technology.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/visual-representation-of-ai-powered-auto-1772542587098-5506675c.png"},
+              title: "Text Analysis",              description: "Analyze, summarize, and enhance your text. Extract key insights, check grammar, and improve clarity with advanced NLP technology.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/visual-representation-of-ai-powered-auto-1772542587098-5506675c.png?_wi=2"},
             {
               id: 4,
-              title: "Code Assistant",              description: "Get AI-powered coding help. Debug, optimize, and generate code snippets in multiple programming languages instantly.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/futuristic-visualization-of-predictive-a-1772542587310-0a73569d.png"},
+              title: "Code Assistant",              description: "Get AI-powered coding help. Debug, optimize, and generate code snippets in multiple programming languages instantly.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/futuristic-visualization-of-predictive-a-1772542587310-0a73569d.png?_wi=2"},
           ]}
         />
       </div>
