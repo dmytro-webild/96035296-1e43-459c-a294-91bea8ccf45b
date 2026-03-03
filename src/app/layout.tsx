@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
-import { Halant } from "next/font/google";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ServiceWrapper } from "@/components/ServiceWrapper";
@@ -10,24 +9,19 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",  subsets: ["latin"],
 });
 
-const halant = Halant({
-  variable: "--font-halant",  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
 const inter = Inter({
   variable: "--font-inter",  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "AICore - Enterprise AI Solutions",  description: "Transform your business with intelligent AI platform. Automate workflows, gain insights, and scale operations with advanced machine learning.",  keywords: "AI, machine learning, artificial intelligence, automation, analytics, predictive analytics",  robots: {
+  title: "AICore - Free AI Tools Platform",  description: "Access free AI-powered tools including image generation, voice generation, and advanced AI utilities. No credit card required.",  keywords: "AI, free AI tools, image generation, voice generation, artificial intelligence, free tools, AI utilities",  robots: {
     index: true,
     follow: true,
   },
   openGraph: {
-    title: "AICore - Enterprise AI Solutions",    description: "Intelligent AI platform for modern business transformation",    siteName: "AICore",    type: "website"},
+    title: "AICore - Free AI Tools Platform",    description: "Powerful free AI tools for image and voice generation",    siteName: "AICore",    type: "website"},
   twitter: {
-    card: "summary_large_image",    title: "AICore - Enterprise AI Solutions",    description: "Transform your business with our cutting-edge AI platform"},
+    card: "summary_large_image",    title: "AICore - Free AI Tools Platform",    description: "Free AI image generation, voice generation, and advanced tools"},
 };
 
 export default function RootLayout({
@@ -38,9 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body
-          className={`${dmSans.variable} ${halant.variable} ${inter.variable} antialiased`}
-        >
+        <body className={`${dmSans.variable} ${inter.variable} antialiased`}>
           <Tag />
           {children}
         
