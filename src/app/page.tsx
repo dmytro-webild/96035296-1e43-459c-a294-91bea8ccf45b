@@ -71,7 +71,7 @@ export default function LandingPage() {
           buttonAnimation="blur-reveal"
           dashboard={{
             title: "AI Tools Dashboard",            logoIcon: Zap,
-            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/a-modern-sleek-ai-dashboard-interface-wi-1772542588693-f10752a8.png",            searchPlaceholder: "Search tools...",            sidebarItems: [
+            imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/a-modern-sleek-ai-dashboard-interface-wi-1772542588693-f10752a8.png?_wi=1",            searchPlaceholder: "Search tools...",            sidebarItems: [
               { icon: ImageIcon, active: true },
               { icon: Mic, active: false },
               { icon: Wand2, active: false },
@@ -120,16 +120,16 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              title: "Image Generation",              description: "Create stunning, high-quality images from text descriptions. Powered by advanced neural networks, generate unlimited images with complete creative freedom.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/abstract-visualization-of-artificial-neu-1772542587328-cfcff9b6.png"},
+              title: "Image Generation",              description: "Create stunning, high-quality images from text descriptions. Powered by advanced neural networks, generate unlimited images with complete creative freedom.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/abstract-visualization-of-artificial-neu-1772542587328-cfcff9b6.png?_wi=1"},
             {
               id: 2,
-              title: "Voice Generation",              description: "Transform text into natural-sounding speech in multiple languages. Create voiceovers, narrations, and audio content with realistic AI voices—completely free.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/a-professional-workspace-showing-ai-powe-1772542587629-ff99eba2.png"},
+              title: "Voice Generation",              description: "Transform text into natural-sounding speech in multiple languages. Create voiceovers, narrations, and audio content with realistic AI voices—completely free.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/a-professional-workspace-showing-ai-powe-1772542587629-ff99eba2.png?_wi=1"},
             {
               id: 3,
-              title: "Advanced AI Utilities",              description: "Access a collection of specialized AI tools including text analysis, content generation, code assistance, and creative writing—all integrated in one platform.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/visual-representation-of-ai-powered-auto-1772542587098-5506675c.png"},
+              title: "Advanced AI Utilities",              description: "Access a collection of specialized AI tools including text analysis, content generation, code assistance, and creative writing—all integrated in one platform.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/visual-representation-of-ai-powered-auto-1772542587098-5506675c.png?_wi=1"},
             {
               id: 4,
-              title: "Unlimited Creativity",              description: "No limits, no restrictions. Generate as many images and voices as you want. Create, iterate, and refine your projects without worrying about quotas or charges.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/futuristic-visualization-of-predictive-a-1772542587310-0a73569d.png"},
+              title: "Unlimited Creativity",              description: "No limits, no restrictions. Generate as many images and voices as you want. Create, iterate, and refine your projects without worrying about quotas or charges.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3AR5L3TkBQonTQ7kp66p2VA0p6f/futuristic-visualization-of-predictive-a-1772542587310-0a73569d.png?_wi=1"},
           ]}
         />
       </div>
